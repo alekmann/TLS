@@ -25,7 +25,7 @@ public class JavaSSLServer {
         
         try {
             ServerSocket sslServerSocket = 
-                    sslServerSocketFactory.createServerSocket(port);
+                    sslServerSocketFactory.createServerSocket("192.168.1.101", port);
             System.out.println("SSL ServerSocket started");
             System.out.println(sslServerSocket.toString());
             

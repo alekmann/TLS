@@ -19,7 +19,7 @@ public class JavaSSLClient {
         SSLSocketFactory sslSocketFactory = 
                 (SSLSocketFactory)SSLSocketFactory.getDefault();
         try {
-            Socket socket = sslSocketFactory.createSocket("localhost", port);
+            Socket socket = sslSocketFactory.createSocket("192.168.1.101", port);
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             try (BufferedReader bufferedReader = 
                     new BufferedReader(
